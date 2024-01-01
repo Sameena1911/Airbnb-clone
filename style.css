@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    font-family: 'Poppins', sans-serif;   
+}
+/*section1*/
+.section1{
+    background-color: #F7F7F7;
+    border-bottom: solid gray 1px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: underline;
+}
+/*section2*/
+.section2__navbar{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px;
+    border-bottom: solid grey 1px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.navbar1{
+    color: #FF385C;
+    font-size: 19px;
+    font-weight: bolder;
+}
+.navbar2{
+    border: solid black 1px;
+    border-radius: 40px;
+    width:50%;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+.navbar2 input{
+    border: none;
+    width: 300px;
+}
+.navbar2 input:focus{
+    outline: none;
+}
+.navbar3{
+    border: solid black 1px;
+    border-radius: 20px;
+    justify-content: space-between;
+    width:100px;
+    display: flex;
+
+}
+.navbar3 i{
+    padding:10px;
+}
+/*section3*/
+.section3__icons{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid grey 1px;
+    margin: 35px;
+}
+.icons__names {
+        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icons__names:hover{
+    color: #FF385C;
+}
+/*section4*/
+.section4{
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+
+}
+.card{
+    width: 300px;
+    padding: 30px;
+    animation-name: zoom;
+    animation-duration: 1s;
+    
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    
+
+}
+.card h5{
+
+    color:#FF385C;
+    
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+/*section5*/
+.section5{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
+    background-color: #FF385C;
+    border-radius: 30px;
+    align-items: center;
+    width:120px;
+    justify-content: center;
+    bottom:1%;
+    left:45%;
+    
+}
+/*section8*/
+.section8{
+    margin: 20px;
+    text-align: center;
+    padding:20px;
+}
+.section8 h3{
+    padding:20px;
+}
+.section8 button{
+    padding:20px;
+    border-radius: 15px;
+    background-color: #000000;
+    border: transparent;
+    color: white;
+    font-size: 15px;
+    transition: 1s;
+    border: solid black 2px;
+}
+.section8 button:hover{
+    background-color: white;
+    color: #000000;
+    border: solid black 2px;
+}
+
+/*section6*/
+.section6{
+    background-color: #F7F7F7;
+    font-weight: lighter;
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+    width: 90%;
+}
+.left{
+    padding:10px;
+}
+.middle{
+    padding:10px;
+}
+.right{
+    padding:10px;
+}
+/*section7*/
+.section7{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    background-color: #F7F7F7;
+    width: 90%;
+    
+}
+.footer__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.footer__right i{
+    padding: 10px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 900px){
+    .section3__icons{
+        font-size: small;
+        
+    }
+    .icons__names{
+        padding:10px;
+    }
+    .section4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        
+    }
+    .card{
+        width:180px;
+        margin-right: 100px;
+        
+    }
+    .title {
+        flex-wrap: wrap;
+        
+        
+        
+    }
+    .section5{
+       left:40%;
+    }
+      
+      
+}
+@media screen and (max-width: 412px){
+    .section3__icons{
+        display: none;
+    }
+    .section2__navbar{
+        gap:10px;
+        z-index: 2;
+    }
+    .section5{
+        left:34%;
+        z-index: 1;
+    }
+    .navbar2 input{
+        width:140px;
+    }
+    .section6{
+        margin:5px;
+        width:100%;
+    }
+    .section7{
+        margin:5px;
+        width:100%;
+    }
+}
